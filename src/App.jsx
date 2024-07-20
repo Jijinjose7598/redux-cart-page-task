@@ -11,7 +11,7 @@ const App = () => {
   const loading = useSelector(state => state.products.loading);
 
   useEffect(() => {
-    fetch('http://localhost:5173/product.json')
+    fetch('https://redux-cartpage.netlify.app/product.json')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch product data');
